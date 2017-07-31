@@ -7,6 +7,8 @@ import Home from "./Components/Home";
 import BaseLayout from "./Components/BaseLayout";
 import Profile from "./Components/Profile";
 import About from "./Components/About";
+import Contacts from "./Components/Contacts";
+import References from "./Components/References";
 
 class App extends Component {
   render() {
@@ -15,9 +17,11 @@ class App extends Component {
       <BrowserRouter>
         <BaseLayout>
           <Switch>
-            <Route path='/home' component={Home}/>
             <Route path='/about' component={About}/>
             <Route path='/profile' component={Profile}/>
+            <Route path='/contacts' component={Contacts}/>
+            <Route path='/references' component={References}/>
+            <Route exact path='/' component={Home}/>
           </Switch>
         </BaseLayout>
       </BrowserRouter>

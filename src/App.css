@@ -2,9 +2,27 @@
   text-align: center;
 }
 
-body{
+.maindiv{
   background-image: url("./coding-background.jpeg");
   background-size: cover;
+  background-position: center;
+  height: 800px;
+}
+.maindiv2{
+   /* The image used */
+    background-image: url("./pexels-photo-496351.jpeg");
+
+    /* Set a specific height */
+    height: 830px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .App-logo {
@@ -35,6 +53,16 @@ body{
   width: 50%;
   margin: 10px auto 0 auto;
 }
+
+.list-of-skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skill{
+  width: 25%;
+  font-size: 72px;
+}
 img{
   width: 300px;
   height: 300px;
@@ -48,5 +76,8 @@ img{
 .button-div{
   display: flex;
   justify-content: center;
+}
 
+.homebutton:hover:after{
+  content: "home";
 }
